@@ -4,6 +4,11 @@
     margin: 2rem 0 1rem 0;
 }
 
+.header__nv__text {
+    text-decoration: none;
+    color: black;
+}
+
 .header__lipina {
     text-align: center;
     font-size: 1.2rem;
@@ -79,19 +84,18 @@
         text-decoration: none;
         list-style: none;
         padding: 0.5rem 2rem;
-        border-right: black;
         border-style: solid;
-        border-width: 0 0.1rem 0 0;
+        border-width: 0 0.1rem 0.1rem 0;
+        border-right-color: black;
+        border-bottom-color: transparent;
     }
 
     .nav__item:last-child {
-        border-width: 0;
+        border-width: 0 0 0.1rem 0;
     }
 
     .nav__item:hover {
-        border-width: 0.1rem;
-        border-style: solid;
-        border-color: black;
+        border-bottom-color: black;
     }
 
     .nav {
