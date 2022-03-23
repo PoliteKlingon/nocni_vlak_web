@@ -1,3 +1,17 @@
+:root {
+    --text-color: beige;
+    --background-color: #14141c;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+a {
+    color: var(--text-color);
+}
+
 .header__nv {
     text-align: center;
     padding: 0;
@@ -6,7 +20,6 @@
 
 .header__nv__text {
     text-decoration: none;
-    color: black;
 }
 
 .header__lipina {
@@ -86,7 +99,7 @@
         padding: 0.5rem 2rem;
         border-style: solid;
         border-width: 0 0.1rem 0.1rem 0;
-        border-right-color: black;
+        border-right-color: var(--text-color);
         border-bottom-color: transparent;
     }
 
@@ -95,7 +108,7 @@
     }
 
     .nav__item:hover {
-        border-bottom-color: black;
+        border-bottom-color: var(--text-color);
     }
 
     .nav {
