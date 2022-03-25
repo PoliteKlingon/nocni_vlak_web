@@ -1,0 +1,68 @@
+.photos {
+    display: grid;
+    grid-template-columns: 215px 170px 190px 225px;
+    grid-template-rows: 605px
+}
+
+.photo-jarek {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.photo-jarek:hover ~ .photo-jana { /*vsechno toto bude udelano JavaScriptem, toto je jen test...*/
+    display: none;
+}
+.photo-jarek:hover ~ .photo-jana--bw {
+    display: unset;
+}
+.photo-jarek:hover ~ .photo-jirka {
+    display: none;
+}
+.photo-jarek:hover ~ .photo-jirka--bw {
+    display: unset;
+}
+.photo-jarek:hover ~ .photo-petr {
+    display: none;
+}
+.photo-jarek:hover ~ .photo-petr--bw {
+    display: unset;
+}
+
+.photo-jana {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.photo-jirka {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+.photo-petr {
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+}
+
+.photo-jarek--bw {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    display: none;
+}
+
+.photo-jana--bw {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    display: none;
+}
+
+.photo-jirka--bw {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    display: none;
+}
+
+.photo-petr--bw {
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+    display: none;
+}
