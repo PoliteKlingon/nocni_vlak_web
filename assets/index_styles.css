@@ -3,7 +3,19 @@
 }
 
 @media screen and (min-width: 500px) {
+    main {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
     .welcome-photo {
-        width: 100%;
+        grid-column: 2 / 3;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    main {
+        display: grid;
+        grid-template-columns: auto 900px auto;
     }
 }

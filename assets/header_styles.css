@@ -37,7 +37,7 @@ a {
     padding: 0 0 0.5rem 0;
 }
 
-.nav {
+.nav__list {
     display: flex;
     flex-direction: column;
     margin: 0.5rem;
@@ -53,6 +53,10 @@ a {
 
 .nav__item:first-child {
     display: unset;
+}
+
+.nav__item-separator {
+    display: none;
 }
 
 .hamburger {
@@ -76,12 +80,22 @@ a {
 }
 
 @media screen and (min-width: 500px) {
+    header {
+        display: grid;
+        grid-template-columns: 10px auto 10px;
+        grid-template-rows: 85px 55px 70px;
+    }
+
     .header__nv {
         text-align: center;
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
     }
 
     .header__lipina {
         text-align: center;
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
     }
 
     .footer {
@@ -89,35 +103,79 @@ a {
     }
 
     .navigation {
-        justify-content: center;
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+    }
+
+    .nav {
+        width: 100%;
+    }
+
+    .nav__list {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
     }
 
     .nav__item {
         display: unset;
         text-decoration: none;
         list-style: none;
-        padding: 0.5rem 2rem;
+        padding: 0.5rem 0.5rem;
         border-style: solid;
-        border-width: 0 0.1rem 0.1rem 0;
-        border-right-color: var(--text-color);
-        border-bottom-color: transparent;
-    }
-
-    .nav__item:last-child {
         border-width: 0 0 0.1rem 0;
+        border-bottom-color: transparent;
     }
 
     .nav__item:hover {
         border-bottom-color: var(--text-color);
     }
 
-    .nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+    .nav__item-separator {
+        display: unset;
+        list-style: none;
+        height: 2.5rem;
+        width: 0.1rem;
+        border-width: 0 0.1rem 0 0;
+        border-style: solid;
+        border-right-color: var(--text-color);
     }
 
     .hamburger {
         display: none;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .nav__item {
+        padding: 0.5rem 1rem;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .nav__item {
+        padding: 0.5rem 1.5rem;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    header {
+        display: grid;
+        grid-template-columns: auto 750px auto;
+    }
+}
+
+
+@media screen and (min-width: 900px) {
+    .nav__item {
+        padding: 0.5rem 2rem;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: auto 800px auto;
     }
 }
