@@ -1,4 +1,35 @@
-.footer {
+footer {
+    background-color: var(--main-strip-color);
+}
+
+.footer__text {
     text-align: center;
     font-size: 0.9rem;
+}
+
+.footer-separator {
+    color: var(--text-color);
+    width: 30rem;
+    margin: 2rem auto;
+    border-radius: 5px;
+}
+
+@media screen and (min-width: 500px) {
+    footer {
+        background-color: var(--background-color);
+        display: grid;
+        grid-template-columns: 0 auto 0;
+        grid-template-rows: auto;
+    }
+
+    .footer-block {
+        grid-column: 2 / 3;
+        background-color: var(--main-strip-color);
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    footer {
+        grid-template-columns: auto 1000px auto;
+    }
 }

@@ -66,3 +66,15 @@
     grid-row: 1 / 2;
     display: none;
 }
+
+.stage-plan__download {
+    background-color: aquamarine;
+    border-radius: 8px;
+    border-color: aquamarine;
+    height: 40px;
+    width: 40px;
+}
+
+.stage-plan__download:active {
+    background-color: hotpink;
+}

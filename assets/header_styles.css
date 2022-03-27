@@ -1,15 +1,32 @@
 :root {
     --text-color: beige;
     --background-color: #14141c;
+    --main-strip-color: #482518;
+}
+
+/*  #14141c
+    #4c281b
+    #482518
+    #7f5343
+    #5187ad
+*/
+
+body {
+    background-color: var(--main-strip-color);
+    padding: 0;
+    margin: 0;
 }
 
 body {
-    background-color: var(--background-color);
     color: var(--text-color);
 }
 
 a {
     color: var(--text-color);
+}
+
+header {
+    background-color: var(--main-strip-color);
 }
 
 .header__nv {
@@ -22,7 +39,7 @@ a {
     text-decoration: none;
 }
 
-.header__lipina {
+.header__lipina--text {
     text-align: center;
     font-size: 1.2rem;
     padding: 0;
@@ -80,21 +97,26 @@ a {
 }
 
 @media screen and (min-width: 500px) {
+    body {
+        background-color: var(--background-color);
+    }
+
     header {
+        background-color: var(--background-color);
         display: grid;
-        grid-template-columns: 10px auto 10px;
-        grid-template-rows: 85px 55px 70px;
+        grid-template-columns: 0 10px auto 10px 0;
+        grid-template-rows: 100px 55px 70px;
     }
 
     .header__nv {
         text-align: center;
-        grid-column: 2 / 3;
+        grid-column: 3 / 4;
         grid-row: 1 / 2;
     }
 
     .header__lipina {
         text-align: center;
-        grid-column: 2 / 3;
+        grid-column: 3 / 4;
         grid-row: 2 / 3;
     }
 
@@ -103,7 +125,7 @@ a {
     }
 
     .navigation {
-        grid-column: 2 / 3;
+        grid-column: 3 / 4;
         grid-row: 3 / 4;
     }
 
@@ -144,6 +166,14 @@ a {
         border-right-color: var(--text-color);
     }
 
+    .header-background {
+        background-color: var(--main-strip-color);
+        grid-column: 2 / 5;
+        grid-row: 1 / 4;
+    }
+
+
+
     .hamburger {
         display: none;
     }
@@ -153,29 +183,40 @@ a {
     .nav__item {
         padding: 0.5rem 1rem;
     }
+
+    header {
+        grid-template-columns: 0 auto 550px auto 0;
+    }
 }
 
 @media screen and (min-width: 700px) {
     .nav__item {
         padding: 0.5rem 1.5rem;
     }
+
+    header {
+        grid-template-columns: 0 auto 650px auto 0;
+    }
 }
 
 @media screen and (min-width: 800px) {
     header {
-        display: grid;
-        grid-template-columns: auto 750px auto;
+        grid-template-columns: 0 auto 750px auto 0;
     }
 }
 
-
 @media screen and (min-width: 900px) {
+    header {
+        grid-template-columns: 0 auto 800px auto 0;
+    }
+}
+
+@media screen and (min-width: 1000px) {
     .nav__item {
         padding: 0.5rem 2rem;
     }
 
     header {
-        display: grid;
-        grid-template-columns: auto 800px auto;
+        grid-template-columns: auto 100px 800px 100px auto;
     }
 }

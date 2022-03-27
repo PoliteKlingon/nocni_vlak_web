@@ -10,8 +10,9 @@
 </head>
 <body>
 <header>
+    <div class="header-background"></div>
     <h1 class="header__nv"><a class="header__nv__text" href="index.html">Noční vlak</a></h1>
-    <p class="header__lipina">Lipina</p>
+    <h2 class="header__lipina">Lipina</h2>
 
     <div class="navigation">
         <nav class="nav">
@@ -20,13 +21,13 @@
                 <li class="nav__item-separator"></li>
                 <li onclick="location.href = 'o_nas.html';" class="nav__item">O nás</li>
                 <li class="nav__item-separator"></li>
-                <li onclick="location.href = 'historie.html';" class="nav__item">Historie</li>
+                <li onclick="location.href = 'co_hrajeme.html';" class="nav__item">Co hrajeme</li>
                 <li class="nav__item-separator"></li>
                 <li onclick="location.href = 'galerie.html';" class="nav__item">Galerie</li>
                 <li class="nav__item-separator"></li>
-                <li onclick="location.href = 'co_hrajeme.html';" class="nav__item">Co hrajeme</li>
-                <li class="nav__item-separator"></li>
                 <li onclick="location.href = 'texty.html';" class="nav__item">Texty</li>
+                <li class="nav__item-separator"></li>
+                <li onclick="location.href = 'historie.html';" class="nav__item">Historie</li>
             </ul>
         </nav>
         <div class="hamburger">
@@ -39,6 +40,15 @@
 </header>
 
     <main>
+
+        <h2>O nás</h2>
+
+        <div class="description__band">
+            <p class="description__band__text">
+                Jsme bluegrassová kapela........ Popis kapely goes here.
+            </p>
+        </div>
+
         <div class="photos">
             <div class="photo-jarek">
                 <img alt="" src="img/kdo_je_kdo/Jarek.png">
@@ -69,10 +79,7 @@
             </div>
 
         </div>
-        <div class="description">
-            <p class="description__band">
-                Jsme bluegrassová kapela........ Popis kapely goes here.
-            </p>
+        <div class="description__members">
             <p class="description__jarek">
                 Toto je popisek pro Jarka.
             </p>
@@ -86,13 +93,21 @@
                 Toto je popisek pro Petra.
             </p>
         </div>
+        <div class="stage-plan">
+            <img alt="" src="img/plan_pro_zvukare.png">
+            <label>
+                <button class="stage-plan__download" type="button">Stahnout</button>
+            </label>
+        </div>
     </main>
 
-    <footer>
-        <p class="footer">Noční vlak</p>
-        <p class="footer">Lipina u Šternberka, Česká republika</p>
-        <p class="footer">Tel: 420 739 213 626 | E-mail: <a href="mailto:jarek.loun@seznam.cz">jarek.loun@seznam.cz</a></p>
-
-    </footer>
+<footer>
+    <div class="footer-block">
+        <hr class="footer-separator">
+        <p class="footer__text">Noční vlak</p>
+        <p class="footer__text">Lipina u Šternberka, Česká republika</p>
+        <p class="footer__text">Tel: +420 739 213 626 | E-mail: <a href="mailto:jarek.loun@seznam.cz">jarek.loun@seznam.cz</a></p>
+    </div>
+</footer>
 </body>
 </html>
