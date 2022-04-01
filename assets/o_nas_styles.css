@@ -78,3 +78,35 @@
 .stage-plan__download:active {
     background-color: hotpink;
 }
+
+.main-background {
+    background-color: var(--main-strip-color);
+}
+
+.description__band {
+    padding: 1rem 2rem;
+}
+
+@media screen and (min-width: 500px) {
+    main {
+        display: grid;
+        grid-template-columns: 0 auto auto auto 0;
+        grid-template-rows: auto;
+    }
+
+    .main-block {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+    }
+    .main-background {
+        grid-column: 2 / 5;
+        grid-row: 1 / 2;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    main {
+        display: grid;
+        grid-template-columns: auto 50px 900px 50px auto;
+    }
+}
