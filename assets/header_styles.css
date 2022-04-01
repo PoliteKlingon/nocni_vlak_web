@@ -1,7 +1,8 @@
 :root {
     --text-color: beige;
     --background-color: #14141c;
-    --main-strip-color: #482518;
+    /*--main-strip-color: #482518;*/
+    --main-strip-color: #341b10;
 }
 
 /*  #14141c
